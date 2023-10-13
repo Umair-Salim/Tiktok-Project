@@ -36,6 +36,7 @@ The TikTok data team seeks to develop a machine learning model to assist in the 
 
 The TikTok data team considered the relationship between verified_status and video_view_count. 
 One approach conducted was to examine the mean values of video_view_count for each group of verified_status in the sample data. The findings showed that most accounts were unverified. 265,663 accounts were not verified and 91,439 accounts were verified. 
+
 ![image](images/Picture1.png)
 
 The second approach was a two-sample hypothesis test. Aligned with preliminary findings from the mean values, this statistical analysis shows that any observed difference in the sample data is due to an actual difference in the corresponding population means.
@@ -81,9 +82,9 @@ Based on the estimated model coefficients from the logistic regression, longer v
 
 Other video features have small estimated coefficients in the model, so their association with verified status seems to be small. As a result, other video features besides video length do not seem to be associated with verified status.
 
->*Confusion Matrix for logistic Regression model*
->
->![image](images/Picture2.png)
+*Confusion Matrix for logistic Regression model*
+
+![image](images/Picture2.png)
 Upper-left: the number of videos posted by unverified accounts. Upper-right: the number of videos posted by unverified accounts. Lower-left: the number of videos posted by verified accounts. Lower-right: the number of videos posted by verified accounts.
 
 #### *Next steps*
@@ -112,9 +113,9 @@ Performance on the test holdout data yielded near perfect scores, with only five
 
 Subsequent analysis indicated that, as expected, the primary predictors were all related to video engagement levels, with video view count, like count, share count, and download count accounting for nearly all predictive signal in the data. With these results, we can conclude that videos with higher user engagement levels were much more likely to be claims. In fact, no opinion video had more than 10,000 views.
 
->*Confusion matrix for the champion RF model on test holdout data shows only five misclassified samples out of 3,817.*
->
->![image](images/Picture3.png)
+*Confusion matrix for the champion RF model on test holdout data shows only five misclassified samples out of 3,817.*
+
+![image](images/Picture3.png)
 
 #### *Next Steps*
 
