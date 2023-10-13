@@ -36,7 +36,7 @@ The TikTok data team seeks to develop a machine learning model to assist in the 
 
 The TikTok data team considered the relationship between verified_status and video_view_count. 
 One approach conducted was to examine the mean values of video_view_count for each group of verified_status in the sample data. The findings showed that most accounts were unverified. 265,663 accounts were not verified and 91,439 accounts were verified. 
->![image](images/Picture1.png)
+![image](images/Picture1.png)
 
 The second approach was a two-sample hypothesis test. Aligned with preliminary findings from the mean values, this statistical analysis shows that any observed difference in the sample data is due to an actual difference in the corresponding population means.
 
